@@ -1,0 +1,12 @@
+{
+  "name": "Cotest",
+  "version": "1.0.0",
+  "description": "Th-release.cth GBSW Coding Test",
+  "main": "index.js",
+  "license": "Th-release.cth",
+  "dependencies": {
+    "readline": "^1.3.0",
+    "unique-random": "^3.0.0"
+  },
+  "type": "module"
+}
