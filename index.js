@@ -10,7 +10,10 @@ const rl = readline.createInterface({
 
 rl.on('line', function(line) {
   for (let i = 0; i < parseInt(line); i++) {
-    console.log(`${i+1}번 게임\n` + random() + ", " + random() + ", " + random() + ", " + random() + ", " +  random() + ", " +  random());
+    let array1 = [random(), random(), random(), random(), random(), random()];
+    array1.sort( function(a, b) { return a - b; });
+    for (let i = 0; i < array1.length; i++) if (array1[i] < 10 ) array1[i] = "0" + array1[i]; 
+    console.log(`${i+1}번 게임\n` + array1);
   }
   rl.close();
 }).on("close", function() {
