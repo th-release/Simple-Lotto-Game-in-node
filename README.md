@@ -2,7 +2,6 @@
 
 NPM :
   unique-random
-  readline
 
 Start :
   node .
